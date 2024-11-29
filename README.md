@@ -19,7 +19,7 @@ Streamlit:
 
 docker build -t streamlit_dashboard .
 
-docker run --name app -it streamlit_dashboard
+docker run --name app -p 8501:8501 -it streamlit_dashboard 
 
 Conexão:
 
