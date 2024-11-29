@@ -29,13 +29,6 @@ sl = st.slider(
     min_val, max_val, (min_val, max_val)  # Seleção inicial: intervalo completo
 )
 
-col5 , col6 = st.columns(2)
-tem_internet = st.session_state.escolas['IN_INTERNET'].unique().tolist()
-with col5:
-    internet = st.checkbox("Tem internet")
-
-esgoto_opcoes = ["Qualquer", 'IN_ESGOTO_REDE_PUBLICA', 'IN_ESGOTO_FOSSA', 'IN_ESGOTO_INEXISTENTE']
-esgoto = st.multiselect("Esgoto", esgoto_opcoes)
 
 # Botões para aplicar e limpar filtros
 col3, col4 = st.columns(2)
