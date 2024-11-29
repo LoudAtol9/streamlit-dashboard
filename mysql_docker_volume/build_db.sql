@@ -538,7 +538,7 @@ load data infile '/var/lib/mysql-files/Escolas Rio Claro 2017.csv'
 into table streamlit_db.escola
 fields terminated by '|'
 enclosed by '"'
-lines terminated by '\r\n'
+lines terminated by '\n'
 ignore 1 lines
 ;
 
@@ -554,7 +554,7 @@ load data infile '/var/lib/mysql-files/Turmas Rio Claro 2017.csv'
 into table streamlit_db.turma
 fields terminated by '|'
 enclosed by '"'
-lines terminated by '\r\n'
+lines terminated by '\n'
 ignore 1 lines
 ;
 
@@ -562,7 +562,7 @@ load data infile '/var/lib/mysql-files/Docentes Rio Claro 2017.csv'
 into table streamlit_db.docente
 fields terminated by '|'
 enclosed by '"'
-lines terminated by '\r\n'
+lines terminated by '\n'
 ignore 1 lines
 ;
 
@@ -570,6 +570,6 @@ load data infile '/var/lib/mysql-files/Matriculas Rio Claro 2017.csv'
 into table streamlit_db.matricula
 fields terminated by '|'
 enclosed by '"'
-lines terminated by '\r\n'
+lines terminated by '\n'
 ignore 1 lines
 ;
